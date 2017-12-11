@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>jQuery shadowtext Plug-in Examples</title>
+		<!-- jQuery/jQueryUI (hosted) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css"/>
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css"/>
+		<link href='http://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>	
+        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">	
+		<style>
+			body {
+				font-family:	'Segoe UI', Verdana, Arial, Helvetica, sans-serif;
+				font-size:		62.5%;
+			}		
+			
+			pre {
+				background-color: white;
+				padding: 		10px;
+				border:			solid 1px gray;
+				box-shadow: 	inset 2px 2px 8px #ddd;
+				font-family:	'Droid Sans Mono', 'Courier New', Courier, monospace;
+				font-size:		1em;				
+			}
+			
+			#demos {
+				height: 600px;
+			}
+			
+			.demo {
+				text-align: center;
+				font-size: 500%;
+			}
+			
+			.demo-tape {
+				background:		#339;
+				background: 	-webkit-gradient(linear, 0% 0%, 0% 100%, from(#006), to(#66c));
+				background: 	-webkit-linear-gradient(top, #66c, #006);
+				background: 	-moz-linear-gradient(top, #66c, #006);
+				background: 	-ms-linear-gradient(top, #66c, #006);
+				background: 	-o-linear-gradient(top, #66c, #006);
+				border-top:		solid 1px #99f;
+				border-bottom:	solid 1px black;
+				padding: 		.25em 4em;
+				box-shadow:		0 2px 8px rgba(0,0,0,.5);
+				font-family:	"Courier New", Courier, monospace;
+				font-weight: 	bold;
+				color:			#66c;
+			}
+		</style>
+						
+		<!-- The widget -->
+		<script src="jquery.shadowtext.js"></script>			
+		<script>	
+			$( function() {			
+				// For the documentation
+				$("#demos").accordion({
+					fillSpace: true
+				});
+		
+				// Shadowtexts
+				$('.demo-default').shadowtext();
+				
+				 
+			});
+		</script>
+	</head>
+	
+	<body>
+
+	
+			
+			
+								
+				 
+				 	
+				<div>
+					<div class="demo"><span class="demo-default"><b>F</b><span style="color: rgba(0,0,0,.25); font-size: 200%;">o</span><code>n</code><i>t</i> <span style="color: #060;">s</span>t<sup>y</sup><span style="font-size: 150%">l</span><u>e</u><span style="font-weight: bold; font-size: 125%; -webkit-text-stroke: 2px black; color: transparent">s</span></div>
+				</div>	
+				
+
+	</body>
+</html>
